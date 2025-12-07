@@ -1,0 +1,2 @@
+[plugins.tools]
+infisical = "file://./infisical/plugin.toml"

@@ -1,0 +1,25 @@
+name = "Infisical"
+type = "cli"
+
+[resolve]
+git-url = "https://github.com/Infisical/cli"
+version-pattern = "^v(.+)"
+
+[platform.linux]
+download-file = "cli_{version}_linux_{arch}.tar.gz"
+
+[platform.macos]
+download-file = "cli_{version}_darwin_{arch}.tar.gz"
+
+[platform.windows]
+download-file = "cli_{version}_windows_{arch}.zip"
+
+[install]
+download-url = "https://github.com/Infisical/cli/releases/download/v{version}/{download_file}"
+checksum-url = "https://github.com/Infisical/cli/releases/download/v{version}/checksums.txt"
+
+[install.arch]
+x86 = "386"
+x86_64 = "amd64"
+arm = "armv6"
+aarch64 = "arm64"
