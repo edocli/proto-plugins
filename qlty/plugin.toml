@@ -1,0 +1,22 @@
+name = "Qlty"
+type = "cli"
+
+[resolve]
+git-url = "https://github.com/qltysh/qlty"
+version-pattern = "^v(.+)"
+
+[platform.linux]
+download-file = "qlty-{arch}-unknown-linux-{libc}.tar.xz"
+checksum-file = "qlty-{arch}-unknown-linux-{libc}.tar.xz.sha256"
+
+[platform.macos]
+download-file = "qlty-{arch}-apple-darwin.tar.xz"
+checksum-file = "qlty-{arch}-apple-darwin.tar.xz.sha256"
+
+[platform.windows]
+download-file = "qlty-{arch}-pc-windows-msvc.zip"
+checksum-file = "qlty-{arch}-pc-windows-msvc.zip.sha256"
+
+[install]
+download-url = "https://github.com/qltysh/qlty/releases/download/v{version}/{download_file}"
+checksum-url = "https://github.com/qltysh/qlty/releases/download/v{version}/{checksum_file}"
