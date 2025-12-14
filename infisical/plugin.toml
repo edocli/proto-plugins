@@ -3,7 +3,6 @@ type = "cli"
 
 [resolve]
 git-url = "https://github.com/Infisical/cli"
-version-pattern = "^v(.+)"
 
 [platform.linux]
 download-file = "cli_{version}_linux_{arch}.tar.gz"

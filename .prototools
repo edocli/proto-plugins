@@ -1,3 +1,4 @@
 [plugins.tools]
 infisical = "file://./infisical/plugin.toml"
-qlty = "file://./qlty/plugin.toml"
+lefthook = "file://./lefthook/plugin.toml"
+qlty = "file://./non-free/qlty/plugin.toml"

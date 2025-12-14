@@ -3,7 +3,6 @@ type = "cli"
 
 [resolve]
 git-url = "https://github.com/qltysh/qlty"
-version-pattern = "^v(.+)"
 
 [platform.linux]
 download-file = "qlty-{arch}-unknown-linux-{libc}.tar.xz"
